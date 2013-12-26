@@ -1,0 +1,6 @@
+{ "name" : "Grapefruit"
+, "email" : "wade.suzy@gmail.com"
+, "url" : "http://suzywade.com"
+, "dependencies" : {"express": "*", "jade": "*"}
+}
+
