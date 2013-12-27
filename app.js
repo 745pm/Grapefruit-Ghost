@@ -2,7 +2,7 @@ var express = require("express");
 var app = express(); 
 app.configure(function(){
   app.set("view engine", "jade")
-  app.set("views", "/grapefruit/views")
+  app.set("views", __dirname + "/views")
   app.set("port", process.env.PORT || 8001);
   // Tells express to log all requests to the console
   app.use(express.logger("dev"));
