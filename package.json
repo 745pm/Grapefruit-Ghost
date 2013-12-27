@@ -1,6 +1,8 @@
 { "name" : "Grapefruit"
 , "email" : "wade.suzy@gmail.com"
 , "url" : "http://suzywade.com"
+, "engine": { "node": "0.10.x" }
+, "repository": "http://github.com/745pm/Grapefruit-Ghost"
 , "dependencies" : {"express": "*", "jade": "*"}
 }
 
