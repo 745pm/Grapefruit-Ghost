@@ -2,7 +2,8 @@ var express = require("express");
 var app = express(); 
 app.configure(function(){
   app.set("view engine", "jade")
-  app.set("views", "/grapefruit/views");
+  app.set("views", "/grapefruit/views")
+  app.set("port", process.env.PORT || 8001);
   // Tells express to log all requests to the console
   app.use(express.logger("dev"));
 });
@@ -17,6 +18,5 @@ app.get("/pictureofgrapefruit", function (req, res){
 app.get("/color", function (req, res){
   res.sendfile ("/grapefruit/public/css/style.css")
 });
-app.listen (8001);
-
+app.listen(app.get("port"));
 
