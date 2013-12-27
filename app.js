@@ -12,11 +12,11 @@ app.get("/", function (req, res) {
   // render uses view engine jade to turn the view into html
 });
 app.get("/pictureofgrapefruit", function (req, res){
-  res.sendfile ("/grapefruit/public/img/grapefruit.jpg")
+  res.sendfile(__dirname + "/public/img/grapefruit.jpg")
   // sendfile sends it as is, unlike render which changes
 });
 app.get("/color", function (req, res){
-  res.sendfile ("/grapefruit/public/css/style.css")
+  res.sendfile(__dirname + "/public/css/style.css")
 });
 app.listen(app.get("port"));
 
